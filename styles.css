@@ -19,6 +19,21 @@ body {
   
 }
 
+#title {
+  margin: 1em auto;
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-size: 50px;
+ }
+
+#description{
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 20px;
+  font-style: italic;
+ 
+}
+
 h1 {
   font-weight: 400;
   line-height: 1.2;
@@ -74,99 +89,59 @@ button {
 .header {
   
 }
+
+/* form */
 form {
   background-color: rgba(19, 19, 58, 0.7);
-  width: 70vw;
-  max-width: 700px;
-  min-width: 500px;
-  margin: 0 auto;
-  padding-bottom: 1em;
-  padding: 0 0.7rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
 }
 
-fieldset {
-  padding: 2rem 0;
-  border: none;
-  border-bottom: 3px solid #3b3b4f;
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem; 
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
-}
-
-
-
-
-
-.inline {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-  min-height: 2.5em;
-  width: 100%;
-
-}
-
-
-input[type="checkbox"] {
-  display: inline-block;
-  margin-right: 0.5rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-}
-
-input[type="radio"] {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-
-}
-
- input[type="checkbox"] {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
- }
-
-.answer {
-  width: unset;
-  margin: 0 0 0.5em 0;
-  padding-bottom: 0;
-  vertical-align: middle
-}
-
-
-
-.improve {
-  width: unset;
-   margin: 0 0 0.5em 0;
-  vertical-align: middle;
-}
-
-.comments::placeholder {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 15px;
-   padding: 0.625rem;
-}
-
-.inline::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  padding: 0;
-}
-
-input[type="submit"] {
+.form-control {
   display: block;
   width: 100%;
-  margin: 1em auto;
-  height: 3em;
-  font-size: 1.1rem;
-  background-color: #b30000;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  min-width: 300px;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: text;
+  background-clip: padding-box;
+  border: 1px solid  grey;
+  border-radius: 0.25rem;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
 }
