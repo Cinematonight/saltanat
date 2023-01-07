@@ -93,7 +93,7 @@ button {
 /* form */
 form {
   background-color: rgba(19, 19, 58, 0.7);
-  padding: 2.5rem;   /*to control form inside box*/
+   padding: 2.5rem 0.625rem;   /*to control form inside box*/
   border-radius: 0.5rem;
 }
 
